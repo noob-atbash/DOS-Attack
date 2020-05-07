@@ -4,7 +4,7 @@
 **What is DOS ATTACK?**
 
 In computing, a denial-of-service attack (DoS attack) is a cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet. Denial of service is typically accomplished by flooding the targeted machine or resource with superfluous requests in an attempt to overload systems and prevent some or all legitimate requests from being fulfilled.
-For More Depth[Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
+For More Depth [Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
 
 ---
 
@@ -122,3 +122,4 @@ root@kali:~#./dos.sh 11 BE:2A:16:CC:C4:C0
 root@kali:~#service network-manager restart
 
 ```
+[ALL CODES] (https://github.com/kaki-epithesi/dos-attack)
