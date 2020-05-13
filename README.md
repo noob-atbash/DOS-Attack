@@ -123,5 +123,6 @@ root@kali:~#./dos.sh 11 BE:2A:16:CC:C4:C0
 root@kali:~#service network-manager restart
 
 ```
-Author - [Kakí_epíthesi](https://github.com/kaki-epithesi)
+Author -[Kakí_epíthesi](https://github.com/kaki-epithesi)
+
 [ALL CODES](https://github.com/kaki-epithesi/dos-attack)
